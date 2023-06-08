@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* general */
+:root{
+    /* Generate Color */
+    --main-color : #19A7CE;
+    --second-color : #fff;
+    --body-color : #1F1F1F;
+
+    /* Generate Font */
+    --main-font : 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--body-color);
+    font-family: var(--main-font);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+section {
+    margin-top: 110px;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.navbar .nav-wrapper{
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.nav-wrapper .logo{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.nav-wrapper .logo img{
+    width: 38px;
+}
+.logo .logo-text{
+    color: var(--second-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+.nav-wrapper .menu-wrapper{
+    display: flex;
+}
+.nav-wrapper .menu-wrapper .menu{
+    display: flex;
+    gap: 50px;
+}
+.menu .menu-link {
+    color: var(--second-color);
+    font-size: 16px;
+}
+.menu .menu-link-active {
+    color: var(--main-color);
+    font-size: 16px;
+}
+.nav-wrapper .btn-navbar {
+    display: flex;
+    gap: 17px;
+}
+.btn-navbar .lets-talk {
+    padding: 10px 31px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    color: var(--second-color);
+    font-size: 16px;
+}
+.btn-navbar .download-cv {
+    padding: 10px 13px;
+    border: 1px solid #19A7CE;
+    border-radius: 10px;
+    color: var(--main-color);
+    font-size: 16px;
+}
+/* Hero */
+.hero .hero-wrapper{
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.content-left .text-hero .nama{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.content-left .text-hero .header-hero{
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--main-color);
+    width: 477px;
+    margin-top: 18px;
+}
+.content-left .text-hero .keterangan-hero{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--second-color);
+    margin-top: 18px;
+    width: 631px;
+}
+.text-hero .btn-hero{
+    display: flex;
+    gap: 17px;
+    margin-top: 44px;
+}
+.text-hero .btn-hero .see-portfolio{
+    padding: 10px 11px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--second-color);
+}
+.text-hero .btn-hero .download-cv-hero{
+    padding: 10px 13px;
+    border: 1px solid #19A7CE;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.hero-wrapper img {
+    width: 366px;
+}
+
+/* Service */
+.service .service-wrapper{
+    margin: auto;
+    text-align: center;
+}
+.service-wrapper .text-service{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--main-color);
+}
+.service-wrapper .keterangan-services {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--second-color);
+    width: 631px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 51px;
+}
+.service .produk-wrapper {
+    margin: auto;
+    text-align: center;
+}
+.produk-wrapper .produk1{
+    width:790px;
+    background-color: #2e2e2e;
+    border-radius: 20px;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    padding: 25px 55px;
+    box-shadow: 3px 3px 7px 4px rgba(0, 0, 0, 0.14);
+}
+.produk1 .logo1 img{
+    width: 44px;
+}
+.produk1 .logo1 .keterangan{
+    font-size: 16px;
+    color: var(--main-color);
+    margin-top: 15px;
+}
+.produk1 .penjelasan{
+    width: 330px;
+    font-size: 14px;
+    color: var(--second-color);
+}
+.produk1 .action{
+    width: 41px;
+    font-size: 20px;
+    color: var(--main-color);
+    border: 1px solid #fff;
+    border-radius: 20.5px;
+    text-align: center;
+    align-items: center;
+}
+
+/* Portfolio Start */
+.portfolio .portfolio-wrapper{
+    margin: auto;
+}
+.portfolio-wrapper .title-portfolio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-portfolio .row1 .heading-portfolio{
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+.portfolio-wrapper .row1 .paragraph-portfolio{
+    font-size: 16px;
+    color: #fff;
+}
+.title-portfolio .link .link-see-more {
+    font-size: 16px;
+    color: var(--second-color);
+}
+.portfolio-wrapper .content_desgraf {
+    margin-top: 23px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.content_desgraf .card{
+    position: relative;
+    width: 260px;
+    border-radius: 20px;
+    overflow-y: hidden;
+    
+}
+.card .deskripsi-desgraf{
+    position: absolute;
+    width: 207px;
+    height: 51px;
+    bottom: -50px;
+    left: 50%;
+    transform:translateX(-50%) ;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 13px;
+    transition: 0.5s ease-in-out;
+}
+.title-desgraf .header-desgraf{
+    font-size: 13px;
+    color: #555555;
+}
+.title-desgraf .sub-desgraf{
+    font-size: 8px;
+    color: #19A7CE;
+}
+
+.card:hover .deskripsi-desgraf{
+    bottom: 23px;
+    transition: 0.5s ease-in-out;
+}
+/* Portfolio End */
+
+/* Testimonial Start */
+.testimonial .testimonial-wrapper{
+    margin: auto;
+    text-align: center;
+}
+.testimonial-wrapper .text-testimonial .header-testimonial{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--main-color);
+}
+.testimonial-wrapper .text-testimonial
+.keterangan-testimonial{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+/* Testimonial end */
